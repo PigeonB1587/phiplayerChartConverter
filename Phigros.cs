@@ -243,8 +243,8 @@ namespace phiplayerChartConverter
                     {
                         start = item.start,
                         end = item.end,
-                        startTime = new[] { item.startTime, 32 },
-                        endTime = new[] { item.endTime, 32 }
+                        startTime = CTMF(new[] { item.startTime, 32 }),
+                        endTime = CTMF(new[] { item.endTime, 32 })
                     });
                 }
                 moveXEvents = moveXEvents.OrderBy(s => GetBeat(s.startTime)).ToList();
@@ -254,8 +254,8 @@ namespace phiplayerChartConverter
                     {
                         start = item.start2.Value,
                         end = item.end2.Value,
-                        startTime = new[] { item.startTime, 32 },
-                        endTime = new[] { item.endTime, 32 }
+                        startTime = CTMF(new[] { item.startTime, 32 }),
+                        endTime = CTMF(new[] { item.endTime, 32 })
                     });
                 }
                 moveYEvents = moveYEvents.OrderBy(s => GetBeat(s.startTime)).ToList();
@@ -265,8 +265,8 @@ namespace phiplayerChartConverter
                     {
                         start = item.start,
                         end = item.end,
-                        startTime = new[] { item.startTime, 32 },
-                        endTime = new[] { item.endTime, 32 }
+                        startTime = CTMF(new[] { item.startTime, 32 }),
+                        endTime = CTMF(new[] { item.endTime, 32 })
                     });
                 }
                 rotateEvents = rotateEvents.OrderBy(s => GetBeat(s.startTime)).ToList();
@@ -276,8 +276,8 @@ namespace phiplayerChartConverter
                     {
                         start = item.start,
                         end = item.end,
-                        startTime = new[] { item.startTime, 32 },
-                        endTime = new[] { item.endTime, 32 }
+                        startTime = CTMF(new[] { item.startTime, 32 }),
+                        endTime = CTMF(new[] { item.endTime, 32 })
                     });
                 }
                 disappearEvents = disappearEvents.OrderBy(s => GetBeat(s.startTime)).ToList();

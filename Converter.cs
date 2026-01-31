@@ -4,7 +4,7 @@ using System.Text;
 
 namespace phiplayerChartConverter
 {
-    internal class Converter
+    public static class Converter
     {
         public static string ConvertChart(string json, ChartType type)
         {
