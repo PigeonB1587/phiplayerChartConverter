@@ -20,12 +20,11 @@ namespace phiplayerChartConverter
                     throw new ArgumentOutOfRangeException(nameof(type), type, null);
             }
         }
-    }
-
-    public enum ChartType
-    {
-        phigros100,
-        phigros250,
-        rephiedit170
+        public enum ChartType
+        {
+            phigros100,
+            phigros250,
+            rephiedit170
+        }
     }
 }
